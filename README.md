@@ -1,15 +1,13 @@
-## Welcome to GitHub Pages
+# Welcome to Utility lib
 
-You can use the [editor on GitHub](https://github.com/piper23/HomeProject/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Still In Development 
+Buidling a libray of basic Utilities
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Genrate OTP
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
+ call GetOTP if no parameters return will be 6 Numeric Characters
+ 1st parmeter is length of OTP to be generated NUMERIC
+ 2nd parameter Should be Set to TRUE IF you want to generate ALPHA NUMERIC pass 1st param as "" if you want to generate 6 char
 
 # Header 1
 ## Header 2
