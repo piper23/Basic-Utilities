@@ -9,7 +9,7 @@ if(isset($_POST)){
 	$password= $_POST['password'];
 
 	if($email=="root" && $password=="root"){
-		echo otpGen\GenerateOTP::GenerateCharacter(4,TRUE)."<br>";
+		echo otpGen\GenerateOTP::GetOTP(4,TRUE)."<br>";
 	
 	}
 }

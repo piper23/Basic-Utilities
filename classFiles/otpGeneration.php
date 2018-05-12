@@ -10,7 +10,7 @@ namespace otpGenerator;
 
 private static $StrigCount=6; // Default Value
 
-  	static function GenerateCharacter(){
+  	static function GetOTP(){
   		$arguments = func_get_args();
   		$baseVariable = date("Ymdhis").rand(10000000,99999999);
   		if(isset($arguments[0])){
