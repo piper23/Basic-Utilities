@@ -1,14 +1,17 @@
 <?php
 include  "../classFiles/otpGeneration.php";
 
-use otpGenerator as otpG;
+use otpGenerator as otpGen;
+
 
 if(isset($_POST)){
-	 $_POST['email'];
-	 $_POST['password'];
+	 $email=$_POST['email'];
+	$password= $_POST['password'];
 
-echo otpG\GenerateOTP::GenerateCharacter(0,TRUE);
-
+	if($email=="root" && $password=="root"){
+		echo otpGen\GenerateOTP::GenerateCharacter(4,TRUE)."<br>";
+	
+	}
 }
 
 

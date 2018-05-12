@@ -12,9 +12,9 @@ private static $StrigCount=6; // Default Value
 
   	static function GenerateCharacter(){
   		$arguments = func_get_args();
-  		$baseVariable = date("Ymdhis").rand(100000,999999);
+  		$baseVariable = date("Ymdhis").rand(10000000,99999999);
   		if(isset($arguments[0])){
-  			if($arguments[0]!=null && $arguments[0]!=""&& $arguments[0]!=0){
+  			if($arguments[0]!=null && $arguments[0]!="" && $arguments[0]!=0){
   			self::$StrigCount=$arguments[0];
   			}
   		}
